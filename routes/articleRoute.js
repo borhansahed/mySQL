@@ -14,6 +14,7 @@ articleRoute.get("/", (req, res) => {
 
 articleRoute.post("/addArticle", (req, res) => {
   const { title, post, email } = req.body;
+  
 
   const findUserId = `SELECT id FROM userInfo WHERE email = '${email}'`;
 
